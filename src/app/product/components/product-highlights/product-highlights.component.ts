@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ItemDescriptionEntity } from '../../models/Product';
 
 @Component({
   selector: 'mr-product-highlights',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductHighlightsComponent implements OnInit {
 
+  @Input('highlights') highlights: Array<ItemDescriptionEntity>;
+
   constructor() { }
 
   ngOnInit() {
+    console.log(this.highlights);
   }
 
 }
