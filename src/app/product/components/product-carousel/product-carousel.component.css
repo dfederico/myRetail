@@ -1,0 +1,19 @@
+.product-title {
+    font-size: 26px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    text-align: center;
+}
+
+.alternate-images {
+    padding:10px;
+}
+
+.nav {
+    cursor: pointer;
+}
+
+.alternate-image img {
+    max-width: 100%;
+    cursor: pointer;
+}

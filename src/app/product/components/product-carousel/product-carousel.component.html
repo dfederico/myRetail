@@ -1,3 +1,27 @@
-<p>
-  product-carousel works!
+<p class="product-title">
+  {{productTitle}}
 </p>
+<div class="carousel">
+    <div class="col-12 live-image">
+        <img src="{{carouselLiveImage}}">
+    </div>
+    <div class="row alternate-images">
+      <div class="col-1 nav" (click)="previous()">
+        left
+      </div>
+      <div class="col-3 alternate-image">
+        <img src={{getLeftAlt()}} (click)="navigatePrimary(getLeftAlt())">
+      </div>
+      <div class="col-3 alternate-image">
+          <img src={{carouselAltImage}} (click)="navigatePrimary(carouselAltImage)">
+      </div>
+      <div class="col-3 alternate-image">
+          <img src={{getRightAlt()}} (click)="navigatePrimary(getRightAlt())">
+      </div>
+      <div class="col-1 nav" (click)="next()">
+        right
+      </div>
+    </div>
+</div>
+
+

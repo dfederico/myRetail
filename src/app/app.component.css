@@ -1,0 +1,54 @@
+/* CLASSES TO CASCADE */
+
+.product-highlights-title {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 36px;
+}
+
+.product-highlights-list {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 20px;
+    color: #666666;
+}
+
+.product-price {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.product-price-descriptor {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666666;
+}
+
+.product-title {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 26px;
+    text-align: center;
+}
+
+.registry-share {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.promotions {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #cc0000;
+}
+
+.review-blurb {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.review-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.review-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
