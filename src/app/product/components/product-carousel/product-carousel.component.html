@@ -6,8 +6,8 @@
         <img src="{{carouselLiveImage}}">
     </div>
     <div class="row alternate-images">
-      <div class="col-1 nav" (click)="previous()">
-        left
+      <div class="col-1 nav nav-left" (click)="previous()">
+        
       </div>
       <div class="col-3 alternate-image">
         <img src={{getLeftAlt()}} (click)="navigatePrimary(getLeftAlt())">
@@ -18,8 +18,8 @@
       <div class="col-3 alternate-image">
           <img src={{getRightAlt()}} (click)="navigatePrimary(getRightAlt())">
       </div>
-      <div class="col-1 nav" (click)="next()">
-        right
+      <div class="col-1 nav nav-right" (click)="next()">
+        
       </div>
     </div>
 </div>

@@ -11,6 +11,53 @@
 
 .nav {
     cursor: pointer;
+    position:relative;
+}
+
+.nav-right:before {
+    content: "";
+    position:absolute;
+    width: 0;
+    height: 0;
+    top: calc(50% - 5px);
+    left:20px;
+	border-top: 10px solid transparent;
+	border-left: 10px solid #5e5e5e;
+	border-bottom: 10px solid transparent;
+}
+.nav-right:after {
+    content: "";
+    position:absolute;
+    width: 0;
+    height: 0;
+    top: calc(50% - 3px);
+    left:19px;
+	border-top: 8px solid transparent;
+	border-left: 8px solid white;
+	border-bottom: 8px solid transparent;
+}
+
+.nav-left:before {
+    content: "";
+    position:absolute;
+    top: calc(50% - 5px);
+    left:20px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 10px solid #5e5e5e;
+	border-bottom: 10px solid transparent;
+}
+.nav-left:after {
+    content: "";
+    position:absolute;
+    width: 0;
+    height: 0;
+    top: calc(50% - 3px);
+    left:23px;
+	border-top: 8px solid transparent;
+	border-right: 8px solid white;
+	border-bottom: 8px solid transparent;
 }
 
 .alternate-image img {
