@@ -27,6 +27,7 @@
     border: none;
     cursor: pointer;
     height: 35px;
+    font-weight: 100;
 }
 
 .in-store-button {
@@ -54,7 +55,7 @@
 }
 
 .returns-disclaimer {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-size: 10px;
     color: #666666;
 }

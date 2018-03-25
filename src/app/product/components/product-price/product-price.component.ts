@@ -13,7 +13,7 @@ export class ProductPriceComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.offers);
+
   }
 
 }

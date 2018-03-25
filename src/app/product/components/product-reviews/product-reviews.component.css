@@ -1,6 +1,7 @@
 .overall-star {
     font-size: 22px;
     color: #999999;
+    float:left;
 }
 
 .review-star {
@@ -9,4 +10,30 @@
 }
 .checked {
     color: #cc0000;
+}
+
+.overall-reviews {
+    font-size:14px;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #262626;
+    width: 100%;
+}
+
+.view-all {
+    float:right;
+    padding-top:5px;
+}
+.overall {
+    padding-left:10px;
+    padding-top:5px;
+    float:left;
+}
+
+.review-section {
+    margin:10px 20px 10px 20px;
+}
+
+.pro-con {
+    background-color: #f6f5f5;
 }

@@ -1,9 +1,17 @@
-<p>
-  product-reviews works!
-</p>
+<div class="row review-section">
+  <div class="overall-reviews">
+    <span *ngFor="let star of starTotal" class="overall-star fa fa-star" [ngClass]="{'checked': star == true}"></span>
+    <span class="overall">overall</span>
+    <span class="view-all">view all {{review[0].totalReviews}} reviews</span>
+  </div>
+</div>
 
-<span class="overall-star fa fa-star checked"></span>
-<span class="overall-star fa fa-star checked"></span>
-<span class="overall-star fa fa-star checked"></span>
-<span class="overall-star fa fa-star"></span>
-<span class="overall-star fa fa-star"></span>
+<div class="row pro-con">
+  <div class="review-section">
+    <span>pro - myriad pro regular 18px;</span>
+    <span>most helpful - arial regular 12px #666666</span>
+    <span>very unhappy arial bold 16px;</span>
+    <span>less than 2 months - arial regular 12px;</span>
+    <span>new york - arial regualr 12px #0066cc;</span>
+  </div>
+</div>

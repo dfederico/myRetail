@@ -1,14 +1,14 @@
-<div class="row" *ngIf="product != null">
-
-  <div class="col-sm-6 col-12">
-    <mr-product-carousel [title]="product.title" [images]="product.Images"></mr-product-carousel>
-    <mr-product-reviews></mr-product-reviews>
+<div class="container-fluid" *ngIf="product != null">
+  <div class="row">
+    <div class="col-sm-6 col-12">
+      <mr-product-carousel [title]="product.title" [images]="product.Images"></mr-product-carousel>
+      <mr-product-reviews [review]="product.CustomerReview"></mr-product-reviews>
+    </div>
+    <div class="col-sm-6 col-12">
+      <mr-product-price [offers]="product.Offers[0].OfferPrice[0]"></mr-product-price>
+      <mr-product-promotions [promotions]="product.Promotions"></mr-product-promotions>
+      <mr-product-cart [purchasingChannelCode]="product.purchasingChannelCode" [returns]="product.ReturnPolicy"></mr-product-cart>
+      <mr-product-highlights [highlights]="product.ItemDescription"></mr-product-highlights>
+    </div>
   </div>
-  <div class="col-sm-6 col-12">
-    <mr-product-price [offers]="product.Offers[0].OfferPrice[0]"></mr-product-price>
-    <mr-product-promotions [promotions]="product.Promotions"></mr-product-promotions>
-    <mr-product-cart [purchasingChannelCode]="product.purchasingChannelCode" [returns]="product.ReturnPolicy"></mr-product-cart>
-    <mr-product-highlights [highlights]="product.ItemDescription"></mr-product-highlights>
-  </div>
-
 </div>
