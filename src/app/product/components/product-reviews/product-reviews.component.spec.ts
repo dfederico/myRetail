@@ -22,4 +22,13 @@ describe('ProductReviewsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should determine the correct amount of stars', () => {
+    let arr = component.calculateStars(3);
+    expect(arr[0]).toBe(true);
+    expect(arr[1]).toBe(true);
+    expect(arr[2]).toBe(true);
+    expect(arr[3]).toBe(false);
+    expect(arr[4]).toBe(false);
+  });
 });

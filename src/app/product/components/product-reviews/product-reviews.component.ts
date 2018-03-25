@@ -13,7 +13,7 @@ export class ProductReviewsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.review);
+
   }
 
   calculateStars(star: number) {
