@@ -117,7 +117,7 @@
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     color: #666666;
     font-size: 20px;
-    padding-right: 15px;
+    padding-right: 10px;
     border-right: 1px solid #666666;
 }
 
@@ -125,4 +125,9 @@
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-size: 10px;
     color: #666666;
+    padding-left:10px;
+}
+
+.flex {
+    display: flex;
 }
