@@ -11,10 +11,12 @@ export class ProductCartComponent implements OnInit {
   @Input("purchasingChannelCode") purchasingChannelCode: number;
   @Input("returns") returns: ReturnPolicyEntity;
  
+  quantity: number;
+
   constructor() { }
 
   ngOnInit() {
-
+    this.quantity = 1;
   }
 
   addToRegistry() {
@@ -39,6 +41,13 @@ export class ProductCartComponent implements OnInit {
 
   addToCart() {
     console.log("placeholder for add to cart functionality");
+  }
+
+  updateQuantity(num: number) {
+    this.quantity += num;
+    if (this.quantity < 1) {
+      this.quantity = 1;
+    }
   }
 
 }

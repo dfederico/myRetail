@@ -1,7 +1,12 @@
 <div class="container">
   <div class="row">
-    <div class="cart-quantity col-md-12 col-12">
-      quantity placeholder
+    <div class="cart-quantity col-6">
+      <div class="cart-quantity-indicator">
+        quantity:
+        <span class="decrease" (click)="updateQuantity(-1)"></span>
+        <span class="quantity">{{quantity}}</span>
+        <span class="increase" (click)="updateQuantity(1)"></span>
+      </div>
     </div>
   </div>
   <div class="row">
