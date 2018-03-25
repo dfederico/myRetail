@@ -1,17 +1,45 @@
 <div class="row review-section">
-  <div class="overall-reviews">
-    <span *ngFor="let star of starTotal" class="overall-star fa fa-star" [ngClass]="{'checked': star == true}"></span>
+  <div class="overall-reviews col-12">
+    <span *ngFor="let star of calculateStars(review[0].consolidatedOverallRating)" class="overall-star fa fa-star" [ngClass]="{'checked': star == true}"></span>
     <span class="overall">overall</span>
     <span class="view-all">view all {{review[0].totalReviews}} reviews</span>
   </div>
 </div>
 
-<div class="row pro-con">
-  <div class="review-section">
-    <span>pro - myriad pro regular 18px;</span>
-    <span>most helpful - arial regular 12px #666666</span>
-    <span>very unhappy arial bold 16px;</span>
-    <span>less than 2 months - arial regular 12px;</span>
-    <span>new york - arial regualr 12px #0066cc;</span>
+<div class="pro-con">
+  <div class="row review-section">
+    <div class="col-6">
+      <p class="review-cat">PRO</p>
+      <p class="review-cat-desc">most helpful 4-5 star review</p>
+    </div>
+    <div class="col-6">
+      <p class="review-cat">CON</p>
+      <p class="review-cat-desc">most helpful 1-2 star review</p>
+    </div>
+  </div>
+  <hr>
+</div>
+<div class="pro-con">
+  <div class="row review-section">
+    <div class="col-6">
+      <span *ngFor="let star of calculateStars(review[0].Pro[0].overallRating)" class="review-star fa fa-star" [ngClass]="{'checked': star == true}"></span>
+      <p class="review-title">{{review[0].Pro[0].title}}</p>
+      <p class="review-blurb">{{review[0].Pro[0].review}}</p>
+      <p class="review-blurb"><span class="reviewer">{{review[0].Pro[0].screenName}}</span> {{review[0].Pro[0].datePosted | date:'longDate'}}</p>
+    </div>
+    <div class="col-6">
+      <span *ngFor="let star of calculateStars(review[0].Con[0].overallRating)" class="review-star fa fa-star" [ngClass]="{'checked': star == true}"></span>
+      <p class="review-title">{{review[0].Con[0].title}}</p>
+      <p class="review-blurb">{{review[0].Con[0].review}}</p>
+      <p class="review-blurb"><span class="reviewer">{{review[0].Con[0].screenName}}</span> {{review[0].Con[0].datePosted | date:'longDate'}}</p>
+    </div>
   </div>
 </div>
+
+
+
+<span>pro - myriad pro regular 18px;</span>
+<span>most helpful - arial regular 12px #666666</span>
+<span>very unhappy arial bold 16px;</span>
+<span>less than 2 months - arial regular 12px;</span>
+<span>new york - arial regualr 12px #0066cc;</span>

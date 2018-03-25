@@ -9,12 +9,12 @@ import { ReviewsEntity } from '../../models/Product';
 export class ProductReviewsComponent implements OnInit {
 
   @Input("review") review: ReviewsEntity;
-  starTotal: Array<any> = [];
+
+
 
   constructor() { }
 
   ngOnInit() {
-    this.starTotal = this.calculateStars(parseInt(this.review[0].consolidatedOverallRating));
     console.log(this.review);
   }
 
