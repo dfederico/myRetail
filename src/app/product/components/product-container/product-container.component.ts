@@ -23,7 +23,13 @@ export class ProductContainerComponent implements OnInit {
     this.productService.getProductInfo(itemId).subscribe(
       success => {
         let resp: ProductObject = success.json();
-        this.product = resp.CatalogEntryView[0];
+        if (resp.CatalogEntryView != undefined) {
+          this.product = resp.CatalogEntryView[0];
+        }
+        else {
+          console.log('no products returned');
+        }
+
       },
       error => console.log(error)
     )

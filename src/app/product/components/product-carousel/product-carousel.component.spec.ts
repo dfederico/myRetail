@@ -22,4 +22,8 @@ describe('ProductCarouselComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should validate alt image goes around the horn', () => {
+    expect(1).toBe('zero');
+  });
 });
