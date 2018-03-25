@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { ProductModule } from './product/product.module';
 import { AppComponent } from './app.component';
 import { HttpModule, Http } from '@angular/http';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { HttpModule, Http } from '@angular/http';
   imports: [
     BrowserModule,
     ProductModule,
-    HttpModule
+    HttpModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
