@@ -1,3 +1,34 @@
-<p>
-  product-cart works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="cart-quantity col-md-12 col-12">
+      quantity placeholder
+    </div>
+  </div>
+  <div class="row">
+    <div *ngIf="purchasingChannelCode == 0 || purchasingChannelCode == 2" class="cart-in-store purchase col-md-6 col-12">
+      <button class="in-store-button" (click)="pickUpInStore()">PICKUP IN STORE</button>
+      <div class="find-in-store" (click)="findInStore()">find in a store</div>
+    </div>
+    <div *ngIf="purchasingChannelCode == 0 || purchasingChannelCode == 1" class="cart-online purchase col-md-6 col-12">
+      <button class="online-button" (click)="addToCart()">ADD TO CART</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="cart-returns col-md-12 col-12">
+      <span class="returns-title">returns</span>
+      <!-- <span class="returns-disclaimer" [innerHtml]="returns[0].legalCopy"></span> -->
+      <span class="returns-disclaimer">This item must be returned within 30 days of the ship date. See return policy for details. Prices, promotions, styles and availability may vary by store and online.</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="cart-social-buttons col-md-4 col-12">
+      <button type="button" class="" (click)="addToRegistry()">ADD TO REGISTRY</button>
+    </div>
+    <div class="cart-social-buttons col-md-4 col-12">
+      <button type="button" class="" (click)="addToList()">ADD TO LIST</button>
+    </div>
+    <div class="cart-social-buttons col-md-4 col-12">
+      <button type="button" class="" (click)="share()">SHARE</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+.cart-social-buttons {
+    padding: 3px;
+}
+
+.cart-social-buttons button {
+    background-color: #F3F3F3;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    height: 100%;
+    max-height: 100%;
+}
+
+.purchase {
+    padding: 5px;
+}
+
+.purchase button {
+    width: 100%;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 35px;
+}
+
+.in-store-button {
+    background: linear-gradient(#636363, black);
+    border: 1px solid #9F9F9F;
+}
+.find-in-store {
+    margin:2px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.online-button {
+    background: linear-gradient(#DF696A, #CA0813);
+    border: 1px solid #CA0813;
+}
+
+.returns-title {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    color: #666666;
+    font-size: 20px;
+    padding-right: 15px;
+    border-right: 1px solid #666666;
+}
+
+.returns-disclaimer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #666666;
+}
