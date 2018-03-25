@@ -60,8 +60,8 @@ describe('ProductCartComponent', () => {
     let pickUpInStore = fixture.debugElement.query(By.css('.cart-in-store'));
     let addToCart = fixture.debugElement.query(By.css('.cart-online'));
 
-    expect(pickUpInStore).toBe(null);
-    expect(addToCart).toBe(null);
+    expect(pickUpInStore).not.toBe(null);
+    expect(addToCart).not.toBe(null);
   });
 
   it('should display neither add to cart nor pickup in store', () => {

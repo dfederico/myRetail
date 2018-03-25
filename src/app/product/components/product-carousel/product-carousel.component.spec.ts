@@ -28,6 +28,9 @@ describe('ProductCarouselComponent', () => {
     component.carouselImages = ['one', 'two', 'three', 'four'];
     fixture.detectChanges();
     expect(component.carouselLiveImage).toBe('one');
-    // expect(1).toBe('zero');
+    expect(component.carouselAltImage).toBe('one');
+    component.previous();
+    component.previous();
+    expect(component.carouselAltImage).toBe('three');
   });
 });
