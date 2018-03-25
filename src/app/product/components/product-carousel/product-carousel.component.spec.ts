@@ -16,14 +16,18 @@ describe('ProductCarouselComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ProductCarouselComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    
   });
 
   it('should create', () => {
+    fixture.detectChanges();
     expect(component).toBeTruthy();
   });
 
   it('should validate alt image goes around the horn', () => {
-    expect(1).toBe('zero');
+    component.carouselImages = ['one', 'two', 'three', 'four'];
+    fixture.detectChanges();
+    expect(component.carouselLiveImage).toBe('one');
+    // expect(1).toBe('zero');
   });
 });

@@ -26,7 +26,7 @@ describe('ProductCartComponent', () => {
   });
 
   it('should validate that quantity can never go below 1', () => {
-    
+    fixture.detectChanges();
     component.updateQuantity(-84);
     expect(component.quantity).toBe(1);
 
