@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { PromotionsEntity } from '../../models/Product';
 
 @Component({
   selector: 'mr-product-promotions',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductPromotionsComponent implements OnInit {
 
+  @Input('promotions') promotions: Array<PromotionsEntity>;
+  
   constructor() { }
 
   ngOnInit() {
+    console.log(this.promotions);
   }
 
 }

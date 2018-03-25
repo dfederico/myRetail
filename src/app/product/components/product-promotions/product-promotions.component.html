@@ -1,3 +1,6 @@
-<p>
-  product-promotions works!
-</p>
+<div class="promotions">
+    <p class="promotion" *ngFor="let promo of promotions">
+        {{promo.Description[0].shortDescription}}
+      </p>
+</div>
+

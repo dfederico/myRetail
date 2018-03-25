@@ -1,0 +1,11 @@
+.promotions {
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+
+.promotion {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #CC0000;
+    margin: 0 5px 0 25px;
+}

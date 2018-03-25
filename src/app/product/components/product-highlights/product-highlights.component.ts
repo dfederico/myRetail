@@ -13,7 +13,7 @@ export class ProductHighlightsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.highlights);
+
   }
 
 }
