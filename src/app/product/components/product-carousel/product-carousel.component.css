@@ -5,6 +5,21 @@
     text-align: center;
 }
 
+.view-larger {
+    margin: 35px 0 15px 0;
+    width:100%;
+    color:#5e5e5e;
+    text-align:center;
+    font-size:14px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.search {
+    color: #999999;
+    font-size:20px;
+    padding-right:5px;
+}
+
 .alternate-images {
     padding:10px;
     margin-left:4%;

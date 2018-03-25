@@ -28,10 +28,12 @@ export class ProductCarouselComponent implements OnInit {
   }
 
   populateCarouselList() {
-    this.carouselImages.push(this.images[0].PrimaryImage[0].image);
-    this.images[0].AlternateImages.forEach(i => {
-      this.carouselImages.push(i.image);
-    });
+    if(this.images != undefined) {
+      this.carouselImages.push(this.images[0].PrimaryImage[0].image);
+      this.images[0].AlternateImages.forEach(i => {
+        this.carouselImages.push(i.image);
+      });
+    }
   }
 
   navigatePrimary(selectedImage) {

@@ -10,8 +10,6 @@ export class ProductReviewsComponent implements OnInit {
 
   @Input("review") review: ReviewsEntity;
 
-
-
   constructor() { }
 
   ngOnInit() {

@@ -1,6 +1,6 @@
 <p class="product-highlights-title">
   product highlights
 </p>
-<ul>
+<ul *ngIf="highlights != undefined">
   <li class="product-highlights-list" *ngFor="let highlight of highlights[0].features" [innerHtml]="highlight"></li>
 </ul>
