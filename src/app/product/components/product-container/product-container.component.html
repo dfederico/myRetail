@@ -1,22 +1,14 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12" *ngIf="product != null">
-      <div>
+<div class="row" *ngIf="product != null">
 
-      </div>
-      <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <mr-product-carousel [title]="product.title" [images]="product.Images"></mr-product-carousel>
-                <mr-product-reviews></mr-product-reviews>
-              </div>
-              <div class="col-6">
-                Product Price Placeholder
-                <mr-product-promotions [promotions]="product.Promotions"></mr-product-promotions>
-                <mr-product-cart [purchasingChannelCode]="product.purchasingChannelCode" [returns]="product.ReturnPolicy"></mr-product-cart>
-                <mr-product-highlights [highlights]="product.ItemDescription"></mr-product-highlights>
-            </div>
-        </div>
-      </div>
+  <div class="col-sm-6 col-12">
+    <mr-product-carousel [title]="product.title" [images]="product.Images"></mr-product-carousel>
+    <mr-product-reviews></mr-product-reviews>
   </div>
+  <div class="col-sm-6 col-12">
+    Product Price Placeholder
+    <mr-product-promotions [promotions]="product.Promotions"></mr-product-promotions>
+    <mr-product-cart [purchasingChannelCode]="product.purchasingChannelCode" [returns]="product.ReturnPolicy"></mr-product-cart>
+    <mr-product-highlights [highlights]="product.ItemDescription"></mr-product-highlights>
+  </div>
+
 </div>

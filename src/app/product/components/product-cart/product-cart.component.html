@@ -5,11 +5,11 @@
     </div>
   </div>
   <div class="row">
-    <div *ngIf="purchasingChannelCode == 0 || purchasingChannelCode == 2" class="cart-in-store purchase col-md-6 col-12">
+    <div *ngIf="purchasingChannelCode == 0 || purchasingChannelCode == 2" class="cart-in-store purchase col-6">
       <button class="in-store-button" (click)="pickUpInStore()">PICKUP IN STORE</button>
       <div class="find-in-store" (click)="findInStore()">find in a store</div>
     </div>
-    <div *ngIf="purchasingChannelCode == 0 || purchasingChannelCode == 1" class="cart-online purchase col-md-6 col-12">
+    <div *ngIf="purchasingChannelCode == 0 || purchasingChannelCode == 1" class="cart-online purchase col-6">
       <button class="online-button" (click)="addToCart()">ADD TO CART</button>
     </div>
   </div>
@@ -21,13 +21,13 @@
     </div>
   </div>
   <div class="row">
-    <div class="cart-social-buttons col-md-4 col-12">
+    <div class="cart-social-buttons col-4">
       <button type="button" class="" (click)="addToRegistry()">ADD TO REGISTRY</button>
     </div>
-    <div class="cart-social-buttons col-md-4 col-12">
+    <div class="cart-social-buttons col-4">
       <button type="button" class="" (click)="addToList()">ADD TO LIST</button>
     </div>
-    <div class="cart-social-buttons col-md-4 col-12">
+    <div class="cart-social-buttons col-4">
       <button type="button" class="" (click)="share()">SHARE</button>
     </div>
   </div>

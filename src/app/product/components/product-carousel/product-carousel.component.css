@@ -17,3 +17,7 @@
     max-width: 100%;
     cursor: pointer;
 }
+
+.live-image img {
+    max-width: 100%;
+}
