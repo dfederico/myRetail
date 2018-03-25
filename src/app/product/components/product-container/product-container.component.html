@@ -5,7 +5,7 @@
     <mr-product-reviews></mr-product-reviews>
   </div>
   <div class="col-sm-6 col-12">
-    Product Price Placeholder
+    <mr-product-price [offers]="product.Offers[0].OfferPrice[0]"></mr-product-price>
     <mr-product-promotions [promotions]="product.Promotions"></mr-product-promotions>
     <mr-product-cart [purchasingChannelCode]="product.purchasingChannelCode" [returns]="product.ReturnPolicy"></mr-product-cart>
     <mr-product-highlights [highlights]="product.ItemDescription"></mr-product-highlights>

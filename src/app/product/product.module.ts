@@ -11,6 +11,7 @@ import { ProductContainerComponent } from './components/product-container/produc
 
 // services
 import { ProductService } from './services/product.service';
+import { ProductPriceComponent } from './components/product-price/product-price.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,7 @@ import { ProductService } from './services/product.service';
     ProductCartComponent, 
     ProductHighlightsComponent, 
     ProductPromotionsComponent, 
-    ProductContainerComponent
+    ProductContainerComponent, ProductPriceComponent
   ],
   providers: [
     ProductService

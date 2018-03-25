@@ -18,7 +18,6 @@ export class ProductCarouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.images);
     this.populateCarouselList();
     this.setCarouselInitState();
   }
