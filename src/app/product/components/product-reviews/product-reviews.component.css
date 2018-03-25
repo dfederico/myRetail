@@ -12,6 +12,10 @@
     color: #cc0000;
 }
 
+.review-section {
+    margin: 15px 0 15px 0;
+}
+
 .overall-reviews {
     font-size:14px;
     font-weight:bold;
@@ -23,6 +27,7 @@
 .view-all {
     float:right;
     padding-top:5px;
+    cursor: pointer;
 }
 .overall {
     padding-left:10px;

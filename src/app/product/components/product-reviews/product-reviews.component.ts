@@ -32,4 +32,8 @@ export class ProductReviewsComponent implements OnInit {
     return arr;
   }
 
+  viewAll() {
+    console.log("placeholder for view all reviews functionality");
+  }
+
 }
