@@ -1,7 +1,7 @@
 <div class="container-fluid" *ngIf="product != null">
   <div class="row">
     <div class="col-sm-6 col-12">
-      <mr-product-carousel [title]="product.title" [images]="product.Images"></mr-product-carousel>
+      <mr-product-carousel [title]="product.title" [images]="product.Images[0]"></mr-product-carousel>
       <mr-product-reviews [review]="product.CustomerReview"></mr-product-reviews>
     </div>
     <div class="col-sm-6 col-12">

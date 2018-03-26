@@ -20,6 +20,7 @@ export class ProductCarouselComponent implements OnInit {
   ngOnInit() {
     this.populateCarouselList();
     this.setCarouselInitState();
+    console.log(this.carouselImages.length);
   }
 
   setCarouselInitState() {
@@ -29,8 +30,8 @@ export class ProductCarouselComponent implements OnInit {
 
   populateCarouselList() {
     if(this.images != undefined) {
-      this.carouselImages.push(this.images[0].PrimaryImage[0].image);
-      this.images[0].AlternateImages.forEach(i => {
+      this.carouselImages.push(this.images.PrimaryImage[0].image);
+      this.images.AlternateImages.forEach(i => {
         this.carouselImages.push(i.image);
       });
     }
