@@ -73,4 +73,50 @@ describe('ProductCartComponent', () => {
     expect(pickUpInStore).toBe(null);
     expect(addToCart).toBe(null);
   });
+
+  it('should trigger the find in store/pick up in store/add to cart functions', () => {
+    spyOn(component, 'findInStore');
+    spyOn(component, 'pickUpInStore');
+    spyOn(component, 'addToCart');
+
+    component.purchasingChannelCode = 0;
+    fixture.detectChanges();
+
+    let findInStore = fixture.debugElement.query(By.css('.find-in-store'));
+    let pickUpInStore = fixture.debugElement.query(By.css('.in-store-button'));
+    let addToCart = fixture.debugElement.query(By.css('.online-button'));
+
+    findInStore.nativeElement.click();
+    expect(component.findInStore).toHaveBeenCalled();
+
+    pickUpInStore.nativeElement.click();
+    expect(component.pickUpInStore).toHaveBeenCalled();
+
+    addToCart.nativeElement.click();
+    expect(component.addToCart).toHaveBeenCalled();
+  });
+
+  it('should trigger the social buttons', () => {
+    spyOn(component, 'addToRegistry');
+    spyOn(component, 'addToList');
+    spyOn(component, 'share');
+
+    fixture.detectChanges();
+
+    let buttons = fixture.debugElement.query(By.css('.cart-social-buttons button'));
+
+    let registry = fixture.debugElement.query(By.css('.registry-button'));
+    let list = fixture.debugElement.query(By.css('.list-button'));
+    let share = fixture.debugElement.query(By.css('.share-button'));
+
+    registry.nativeElement.click();
+    expect(component.addToRegistry).toHaveBeenCalled();
+
+    list.nativeElement.click();
+    expect(component.addToList).toHaveBeenCalled();
+
+    share.nativeElement.click();
+    expect(component.share).toHaveBeenCalled();
+  });
+
 });
