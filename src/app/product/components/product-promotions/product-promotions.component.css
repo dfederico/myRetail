@@ -1,6 +1,9 @@
 .promotions {
     position: relative;
     margin: 20px 0 20px 0;
+    padding: 20px 0 20px 0;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
 }
 
 .promotion {
