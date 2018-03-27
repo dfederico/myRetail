@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { ImagesEntity } from '../../models/Product';
+import { ModalModule, ModalDirective } from 'ngx-bootstrap';
 
 @Component({
   selector: 'mr-product-carousel',
@@ -10,6 +11,9 @@ export class ProductCarouselComponent implements OnInit {
 
   @Input('title') productTitle: string;
   @Input('images') images: ImagesEntity;
+
+  @ViewChild("imgModal")
+  imgModal: ModalDirective;
 
   carouselLiveImage: string;
   carouselAltImage: string;
@@ -64,6 +68,10 @@ export class ProductCarouselComponent implements OnInit {
     else {
       return this.carouselImages[this.carouselImages.indexOf(this.carouselAltImage) + 1];
     }
+  }
+
+  viewLarger() {
+    this.imgModal.show();
   }
 
 }

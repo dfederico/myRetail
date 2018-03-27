@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 // components
 import { ProductCarouselComponent } from './components/product-carousel/product-carousel.component';
@@ -15,7 +16,8 @@ import { ProductPriceComponent } from './components/product-price/product-price.
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    ModalModule.forRoot()
   ],
   declarations: [
     ProductCarouselComponent, 

@@ -1,30 +1,39 @@
 <p class="product-title">
-  {{productTitle}}
+    {{productTitle}}
 </p>
 <div class="carousel">
     <div class="col-12 live-image">
         <img src="{{carouselLiveImage}}">
     </div>
     <div class="row">
-        <div class="view-larger"><i class="fa fa-search-plus search"></i>view larger</div>
+        <div class="view-larger" (click)="viewLarger()">
+            <i class="fa fa-search-plus search"></i>view larger</div>
     </div>
     <div class="row alternate-images">
-      <div class="col-1 nav nav-left" (click)="previous()">
-        
-      </div>
-      <div class="col-3 alternate-image">
-        <img src={{getLeftAlt()}} (click)="navigatePrimary(getLeftAlt())">
-      </div>
-      <div class="col-3 alternate-image">
-          <img src={{carouselAltImage}} (click)="navigatePrimary(carouselAltImage)">
-      </div>
-      <div class="col-3 alternate-image">
-          <img src={{getRightAlt()}} (click)="navigatePrimary(getRightAlt())">
-      </div>
-      <div class="col-1 nav nav-right" (click)="next()">
-        
-      </div>
+        <div class="col-1 nav nav-left" (click)="previous()">
+
+        </div>
+        <div class="col-3 alternate-image">
+            <img src={{getLeftAlt()}} (click)="navigatePrimary(getLeftAlt())">
+        </div>
+        <div class="col-3 alternate-image">
+            <img src={{carouselAltImage}} (click)="navigatePrimary(carouselAltImage)">
+        </div>
+        <div class="col-3 alternate-image">
+            <img src={{getRightAlt()}} (click)="navigatePrimary(getRightAlt())">
+        </div>
+        <div class="col-1 nav nav-right" (click)="next()">
+
+        </div>
     </div>
 </div>
 
-
+<div bsModal #imgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="modal-img" src={{carouselLiveImage}}>
+            </div>
+        </div>
+    </div>
+</div>
