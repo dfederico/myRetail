@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ImagesEntity, AlternateImagesEntityOrPrimaryImageEntity } from '../../models/Product';
 import { ProductCarouselComponent } from './product-carousel.component';
+import { ModalModule } from 'ngx-bootstrap';
 
 describe('ProductCarouselComponent', () => {
   let component: ProductCarouselComponent;
@@ -8,7 +9,8 @@ describe('ProductCarouselComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProductCarouselComponent ]
+      declarations: [ ProductCarouselComponent ],
+      imports: [ModalModule.forRoot()]
     })
     .compileComponents();
   }));
