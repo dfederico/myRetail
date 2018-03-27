@@ -1,14 +1,19 @@
 <div class="container-fluid" *ngIf="product != null">
   <div class="row">
-    <div class="col-sm-6 col-12">
+    <div class="col-md-6 col-12">
       <mr-product-carousel [title]="product.title" [images]="product.Images[0]"></mr-product-carousel>
-      <mr-product-reviews [review]="product.CustomerReview"></mr-product-reviews>
+      <!-- desktop product reviews component -->
+      <mr-product-reviews [review]="product.CustomerReview" class="d-none d-md-block"></mr-product-reviews>
     </div>
-    <div class="col-sm-6 col-12">
+    <div class="col-md-6 col-12">
       <mr-product-price [offers]="product.Offers[0].OfferPrice[0]"></mr-product-price>
       <mr-product-promotions [promotions]="product.Promotions"></mr-product-promotions>
       <mr-product-cart [purchasingChannelCode]="product.purchasingChannelCode" [returns]="product.ReturnPolicy"></mr-product-cart>
       <mr-product-highlights [highlights]="product.ItemDescription"></mr-product-highlights>
+    </div>
+    <!-- mobile product reviews component -->
+    <div class="d-md-none d-lg-none d-xl-none">
+        <mr-product-reviews [review]="product.CustomerReview" class=""></mr-product-reviews>
     </div>
   </div>
 </div>
